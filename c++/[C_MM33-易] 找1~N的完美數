@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    int num, num1;
+    while(cin >> num){  
+        if(num >= 6)
+            cout << "6";
+        for(int j = 7; j <= num ; j++){
+            int sum = 0;
+            for(int i = 1; i < j; i++){
+                if(j % i == 0)
+                    sum += i;
+            }
+            if(j == sum){
+                cout << " " << j;
+            }
+        }
+        cout << endl;
+    }  
+
+    return 0;
+}
