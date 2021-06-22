@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    double num, num1, num2;
+    while(cin >> num >> num1 >> num2){  
+        printf("Trapezoid area:%.1lf\n", (num + num1) * num2 / 2);
+    }  
+
+    return 0;
+}
