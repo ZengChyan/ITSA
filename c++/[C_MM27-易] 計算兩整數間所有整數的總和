@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    int num1, num2;  
+    while(cin >> num1 >> num2){  
+
+        int _min = min(num1, num2);
+        int _max = max(num1, num2);
+        int sum = 0;
+        for(int i = _min; i <= _max; i++)
+            sum += i;
+        cout << sum << endl;
+    }  
+
+    return 0;
+}
