@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    double num, num1;
+    while(cin >> num){  
+        cout << num << ' ' << num * num << ' ' << num * num * num << endl;
+    }  
+
+    return 0;
+}
