@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main(){
+
+    int input;
+
+    cin >> input;
+
+    double result = 1.6*input;
+
+    printf("%.1f\n", result);
+
+    return 0;
+}
