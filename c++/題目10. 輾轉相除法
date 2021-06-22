@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+
+    int a, b;
+	cin >> a >> b;
+	while(1){
+        if((a %= b) && (b %= a)){
+            continue;
+        }else
+            break;
+    }
+    cout << a + b << endl;
+    return 0;
+}
