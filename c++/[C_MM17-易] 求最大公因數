@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    int num, num1;
+    while(cin >> num >> num1){  
+        int _max = max(num, num1);
+        int _min = min(num, num1);
+
+        int t;
+
+        while(_min != 0){
+            t = _min;
+            _min = _max % _min;
+            _max = t;
+        }
+
+        cout << _max << endl;
+    }  
+
+    return 0;
+}
