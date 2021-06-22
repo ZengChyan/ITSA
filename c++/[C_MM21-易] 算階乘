@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    int num;  
+    while(cin >> num){  
+        long long int sum = 1;
+        if(num < 1 || num > 19)
+            continue;
+        for(int i = 1; i <= num; i++)
+            sum *= i;
+        cout << sum << endl;
+    }  
+
+    return 0;
+}
