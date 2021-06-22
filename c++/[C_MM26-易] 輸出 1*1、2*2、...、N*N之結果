@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    int num;  
+    while(cin >> num){  
+        for(int i = 1; i <= num;i++){  
+            cout << i << "*" << i << "=" << i * i << endl;  
+        }  
+    }  
+
+    return 0;
+}
