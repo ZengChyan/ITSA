@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main(){
+
+    int t[4];  
+    int min;  
+    int count,total;  
+    for(int i=0;i<4;i++){  
+        cin >> t[i];
+    }  
+    min=(t[2]*60+t[3])-(t[0]*60+t[1]);  
+    count=min/30;  
+    if(count<=4){  
+        total=count*30;  
+    }  
+    else if(count<=8){  
+        total=120+(count-4)*40;  
+    }  
+    else{  
+        total=280+(count-8)*60;  
+    }  
+    cout << total << endl;
+
+    return 0;
+}題目4. 停車費計算
