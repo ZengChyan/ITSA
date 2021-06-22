@@ -6,14 +6,13 @@ using namespace std;
 
 int main(){
 
-    int a, b;
+    	int a, b, t;
 	cin >> a >> b;
-	while(1){
-        if((a %= b) && (b %= a)){
-            continue;
-        }else
-            break;
-    }
-    cout << a + b << endl;
+	while(b != 0){
+	    t = b;
+	    b = a%b;
+	    a = t;
+	}
+        cout << a << endl;
     return 0;
 }
