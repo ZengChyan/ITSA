@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+#include <cmath>
+#include <algorithm>
+#include <string>
+
+using namespace std;
+
+int main(){
+
+    double num, num1;
+    while(cin >> num >> num1){  
+        printf("%.1lf\n", num * num1 / 2);
+    }  
+
+    return 0;
+}
